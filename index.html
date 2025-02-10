@@ -37,23 +37,23 @@
     <!-- Preload thumbnail first for immediate visual feedback -->
     <link rel="preload" 
           href="https://images.converteai.net/e96615fc-69fd-44eb-aa66-f10aeb9e7081/players/677eb6ce2215c4312815a374/thumbnail.jpg" 
-          as="image" crossorigin>
+          as="image" crossorigin fetchpriority="high">
     
     <!-- Preload entry point script after thumbnail -->
     <link rel="preload" 
           href="https://scripts.converteai.net/e96615fc-69fd-44eb-aa66-f10aeb9e7081/players/677eb6ce2215c4312815a374/player.js" 
-          as="script" crossorigin>
+          as="script" crossorigin fetchpriority="high">
     
     <!-- Preload dependency that will be requested by player.js -->
     <link rel="preload" 
           href="https://scripts.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" 
-          as="script" crossorigin>
+          as="script" crossorigin fetchpriority="high">
     
     <!-- Preload video manifest with lower priority -->
     <link rel="preload" 
           href="https://cdn.converteai.net/e96615fc-69fd-44eb-aa66-f10aeb9e7081/677eb67ae35f0f159c78d7c9/main.m3u8" 
           as="fetch" 
-          crossorigin>
+          crossorigin fetchpriority="high">
 
 </head>
 <body>
