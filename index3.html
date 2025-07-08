@@ -13,7 +13,7 @@
 
   <script>
     ! function () {
-      var e = "v4";
+      var e = "v4.1.0.5-335-1";
       try {
         var i = new URLSearchParams(window.location.search),
           t = i.get("playerVersion");
@@ -29,7 +29,7 @@
       } catch (C) {
         console.error("error getting playerHost from search params", C)
       }
-      I.src = "http://dev.vturb.com:8080/smartplayer.js", I.fetchPriority = "high", document.head.appendChild(I)
+      I.src = M + "/smartplayer.js", I.fetchPriority = "high", document.head.appendChild(I)
     }(),
       function () {
         var t = document.getElementById("vid-686820c805a276572364d1d6"),
